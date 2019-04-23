@@ -4,7 +4,7 @@
   "description": "",
   "main": "index.js",
   "scripts": {
-    "start": "yarn build && nodemon --exec babel-node server/index.js",
+    "start": "node server/index.js",
     "clean": "rm -rf build && mkdir build",
     "build:server": "babel server --out-dir build --copy-files",
     "server": "node build/index.js",
