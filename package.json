@@ -18,7 +18,8 @@
     "express": "^4.16.4",
     "express-graphql": "^0.8.0",
     "faker": "^4.1.0",
-    "graphql": "^14.2.1"
+    "graphql": "^14.2.1",
+    "serverless-http": "^2.0.1"
   },
   "devDependencies": {
     "@babel/cli": "^7.0.0-rc.1",
