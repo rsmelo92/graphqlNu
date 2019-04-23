@@ -15,7 +15,7 @@ app.get("/", function(req, res) {
 
 app.use(
   "/graphql",
-  graphqlHttp({
+  graphqlHttp(() => ({
     schema,
     rootValue: {
       user: {
@@ -36,7 +36,7 @@ app.use(
       }
     },
     graphiql: true
-  })
+  }))
 );
 
 app.listen(process.env.PORT || 3000, "0.0.0.0", () => {

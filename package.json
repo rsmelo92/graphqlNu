@@ -5,6 +5,7 @@
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
+    "dev": "nodemon --exec babel-node server/index.js",
     "clean": "rm -rf build && mkdir build",
     "build:server": "yarn clean && babel server --out-dir build --copy-files",
     "server": "babel-node build/index.js",
