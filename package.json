@@ -1,13 +1,13 @@
 {
-  "name": "graphql-events-booking",
+  "name": "nugraphql",
   "version": "1.0.0",
   "description": "",
   "main": "index.js",
   "scripts": {
     "start": "node index.js",
     "clean": "rm -rf build && mkdir build",
-    "build:server": "babel server --out-dir build --copy-files",
-    "server": "node build/index.js",
+    "build:server": "yarn clean && babel server --out-dir build --copy-files",
+    "server": "babel-node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1",
     "build": "babel server --out-dir ./ --copy-files"
   },
