@@ -6,7 +6,7 @@
   "scripts": {
     "start": "nodemon --exec babel-node server/index.js",
     "clean": "rm -rf build && mkdir build",
-    "build:server": "babel server --out-dir build",
+    "build:server": "babel server --out-dir build --copy-files",
     "build": "yarn clean && yarn build:server",
     "server": "node build/index.js",
     "test": "echo \"Error: no test specified\" && exit 1"

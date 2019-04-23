@@ -1,4 +1,5 @@
 import express from "express";
+import path from "path";
 import bodyParser from "body-parser";
 import graphqlHttp from "express-graphql";
 import faker from "faker/locale/pt_BR";
@@ -7,6 +8,10 @@ import schema from "./schema";
 const app = express();
 
 app.use(bodyParser.json());
+
+app.get("/", function(req, res) {
+  res.sendFile(path.join(__dirname + "/redirect.html"));
+});
 
 app.use(
   "/graphql",
