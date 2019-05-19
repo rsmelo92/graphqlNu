@@ -19,6 +19,7 @@ app.use(
     schema,
     rootValue: {
       user: {
+        id: faker.random.number(),
         name: faker.name.firstName(),
         invoice: faker.finance.amount(100, 1000, 2),
         creditCardLimit: 3000.0,

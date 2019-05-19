@@ -12,6 +12,7 @@ const schema = buildSchema(`
       }
 
       type User {
+        id: ID!
         name: String!
         invoice: Float!
         creditCardLimit: Float!
