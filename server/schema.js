@@ -6,6 +6,11 @@ const schema = buildSchema(`
           points: Float!
       }
 
+      type Transfer {
+          name: String!
+          value: Float!
+      }
+
       type LastPurchase {
           company: String!
           value: Float!
@@ -15,8 +20,9 @@ const schema = buildSchema(`
         id: ID!
         name: String!
         invoice: Float!
-        creditCardLimit: Float!
+        creditCardLimit: String!
         lastPurchase: LastPurchase!
+        transfer: Transfer!
         balance: Float!
         rewardsPoints: Float!
         lastAcumulatedPoints: Float!

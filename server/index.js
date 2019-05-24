@@ -27,6 +27,10 @@ app.use(
           company: faker.company.companyName(),
           value: faker.finance.amount(100, 500, 2)
         },
+        transfer: {
+          name: faker.name.firstName(),
+          value: faker.finance.amount(100, 500, 2)
+        },
         balance: faker.finance.amount(10000, 20000, 2),
         rewardsPoints: faker.finance.amount(20000, 30000, 2),
         lastAcumulatedPoints: faker.finance.amount(2000, 3000, 2),
