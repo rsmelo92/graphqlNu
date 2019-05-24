@@ -2,30 +2,30 @@ import { buildSchema } from "graphql";
 
 const schema = buildSchema(`
       type SuggestionRewards {
-          value: Float!
-          points: Float!
+          value: String!
+          points: String!
       }
 
       type Transfer {
           name: String!
-          value: Float!
+          value: String!
       }
 
       type LastPurchase {
           company: String!
-          value: Float!
+          value: String!
       }
 
       type User {
         id: ID!
         name: String!
-        invoice: Float!
+        invoice: String!
         creditCardLimit: String!
         lastPurchase: LastPurchase!
         transfer: Transfer!
-        balance: Float!
-        rewardsPoints: Float!
-        lastAcumulatedPoints: Float!
+        balance: String!
+        rewardsPoints: String!
+        lastAcumulatedPoints: String!
         suggestionRewards: SuggestionRewards!
       }
 
