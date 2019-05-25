@@ -41,7 +41,7 @@ app.use(
         rewardsPoints: formatMoney(faker.finance.amount(20000, 30000, 2)),
         lastAcumulatedPoints: formatMoney(faker.finance.amount(2000, 3000, 2)),
         suggestionRewards: {
-          value: faker.finance.amount(200, 300, 2),
+          value: formatMoney(faker.finance.amount(200, 300, 2)),
           points: formatMoney(faker.finance.amount(2000, 3000, 2))
         }
       }
